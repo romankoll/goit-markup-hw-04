@@ -115,6 +115,8 @@ img {
   gap: 50px;
 }
 .nav-contacts-item {
+  display: flex;
+  align-items: baseline;
 }
 .nav-contacts-link {
   font-weight: 500;
