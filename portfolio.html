@@ -44,10 +44,19 @@
         </nav>
         <ul class="nav-contacts list">
           <li class="nav-contacts-item">
-            <a href="" class="nav-contacts-link link" lang="en">info@devstudio.com</a>
+            <a href="" class="nav-contacts-link link" lang="en">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="nav-contacts-item">
-            <a href="tel:+380961111111" class="nav-contacts-link link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="nav-contacts-link link"
+              ><svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -155,32 +164,83 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a class="logo-footer link" href="./index.html" lang="en"
-          >Web<span class="logo-footer-span">Studio</span>
-        </a>
-        <address>
-          <ul class="footer-contacts list">
-            <li class="footer-nav-items">
+      <div class="footer-container container">
+        <div class="footer-container-left">
+          <a class="logo-footer link" href="./index.html" lang="en"
+            >Web<span class="logo-footer-span">Studio</span>
+          </a>
+          <address>
+            <ul class="footer-contacts list">
+              <li class="footer-nav-items">
+                <a
+                  href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                  class="footer-adress-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-nav-items">
+                <a href="info@devstudio.com" class="footer-contacts-link link" lang="en"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-nav-items">
+                <a href="tel:+380961111111" class="footer-contacts-link link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-container-right">
+          <h3 class="footer-hero-right">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="social-links-list list">
+            <li>
               <a
-                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                class="footer-adress-link link"
+                class="social-link social-link-footer link"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                м. Київ, пр-т Лесі Українки, 26</a
-              >
+                aria-label="instagram icon"
+                ><svg class="social-icons" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
-            <li class="footer-nav-items">
-              <a href="info@devstudio.com" class="footer-contacts-link link" lang="en"
-                >info@devstudio.com</a
-              >
+            <li>
+              <a
+                class="social-link social-link-footer link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="twitter icon"
+                ><svg class="social-icons" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
-            <li class="footer-nav-items">
-              <a href="tel:+380961111111" class="footer-contacts-link link">+38 096 111 11 11</a>
+            <li>
+              <a
+                class="social-link social-link-footer link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="facebook icon"
+                ><svg class="social-icons" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link-footer link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin icon"
+                ><svg class="social-icons" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

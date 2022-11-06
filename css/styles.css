@@ -119,6 +119,8 @@ img {
   align-items: baseline;
 }
 .nav-contacts-link {
+  display: flex;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -130,10 +132,18 @@ img {
 .nav-contacts-link:focus {
   color: var(--link-focus-color);
 }
+.header-icon {
+  fill: currentColor;
+}
 /*--------------HEADER---------------*/
 
 /*--------------MAIN---------------*/
 .hero {
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url(/images/hero-fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -193,6 +203,19 @@ img {
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-svg-container {
+  margin-bottom: 30px;
+  padding: 25px 0;
+
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.features-svg {
+  display: block;
+  margin: auto;
 }
 .features-item-h {
   width: 270px;
@@ -264,6 +287,8 @@ img {
   letter-spacing: 0.03em;
 }
 .team-item-p {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -271,12 +296,76 @@ img {
 
   color: var(--text-paragraf-color);
 }
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.social-icons {
+  fill: currentColor;
+}
+
+.customers-section {
+  padding: 94px 0;
+}
+
+.customers-h {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+.icon-clients {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-clients:hover,
+.icon-clients:focus {
+  fill: var(--link-focus-color);
+  border: 1px solid var(--link-focus-color);
+  border-radius: 4px;
+}
+
+.customers-link {
+}
 /*--------------MAIN---------------*/
 /*--------------footer---------------*/
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
 }
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -328,7 +417,22 @@ img {
 .footer-contacts-link:focus {
   color: var(--link-focus-color);
 }
+.footer-hero-right {
+  margin-bottom: 20px;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.social-link-footer {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
 /*--------------footer---------------*/
 /*--------------portfolio-main--------------*/
 .main {
