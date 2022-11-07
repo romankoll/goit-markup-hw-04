@@ -141,8 +141,8 @@ img {
 /*--------------MAIN---------------*/
 .hero {
   background-image: url(/images/bg-hero.svg), url(/images/Bg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
 
   text-align: center;
   padding-top: 200px;
