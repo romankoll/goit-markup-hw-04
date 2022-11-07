@@ -138,11 +138,10 @@ img {
 }
 /*--------------HEADER---------------*/
 
-/*--------------MAIN---------------*/
+/*--------------MAIN----------(/images/Bg.svg)-----*/
 .hero {
-  background-image: url(/images/bg-hero.svg), url(/images/Bg.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center;
+  background: url(/images/bg-Img.svg) center no-repeat;
+  background-color: rgba(47, 48, 58, 0.4);
 
   text-align: center;
   padding-top: 200px;
