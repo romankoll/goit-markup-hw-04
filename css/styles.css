@@ -2,13 +2,14 @@
   --link-focus-color: #2196f3;
   --text-paragraf-color: #757575;
   --text-fon-white-color: #ffffff;
+  --text-black-color: #212121;
 
   --indent: 30px;
   --items: 3;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--text-black-color);
 }
 
 /*------card set-----*/
@@ -78,7 +79,7 @@ img {
   color: var(--link-focus-color);
 }
 .logo-header {
-  color: #212121;
+  color: var(--text-black-color);
 }
 .nav-list-container {
   margin-right: auto;
@@ -98,7 +99,7 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-black-color);
 
   accent-color: var(--link-focus-color);
 }
@@ -205,8 +206,10 @@ img {
   margin-right: 30px;
 }
 .features-svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  padding: 25px 0;
 
   width: 270px;
   height: 120px;
@@ -214,8 +217,6 @@ img {
   border-radius: 4px;
 }
 .features-svg {
-  display: block;
-  margin: auto;
 }
 .features-item-h {
   width: 270px;
@@ -270,7 +271,7 @@ img {
   max-width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #ffffff;
+  background-color: var(--text-fon-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -310,13 +311,13 @@ img {
   height: 44px;
   border-radius: 50%;
 
-  background: #fff;
+  background: var(--text-fon-white-color);
   color: #afb1b8;
 }
 .social-link:hover,
 .social-link:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--text-fon-white-color);
+  background-color: var(--link-focus-color);
 }
 .social-icons {
   fill: currentColor;
@@ -335,25 +336,33 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--text-black-color);
 }
 .customers-list {
   display: flex;
   gap: 30px;
 }
-.icon-clients {
-  fill: #afb1b8;
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.icon-clients:hover,
-.icon-clients:focus {
-  fill: var(--link-focus-color);
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--link-focus-color);
   border: 1px solid var(--link-focus-color);
-  border-radius: 4px;
 }
 
-.customers-link {
+.icon-clients {
+  fill: currentColor;
 }
 /*--------------MAIN---------------*/
 /*--------------footer---------------*/
@@ -417,7 +426,12 @@ img {
 .footer-contacts-link:focus {
   color: var(--link-focus-color);
 }
-.footer-hero-right {
+
+.footer-container-right {
+  padding-top: 12px;
+}
+.footer-p-right {
+  width: 116px;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -426,11 +440,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-fon-white-color);
 }
 
 .social-link-footer {
-  color: #ffffff;
+  color: var(--text-fon-white-color);
   background: rgba(255, 255, 255, 0.1);
 }
 /*--------------footer---------------*/
@@ -459,7 +473,7 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
 
-  color: #212121;
+  color: var(--text-black-color);
   background: #f5f4fa;
   border-radius: 4px;
   border-color: transparent;
@@ -471,14 +485,17 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.portfolio-items:focus,
-.portfolio-items:hover {
+
+.portfolio-tool-link {
+  display: block;
+}
+
+.portfolio-tool-link:focus,
+.portfolio-tool-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-tools-text {
-  display: block;
-  width: 370px;
   padding: 20px 22px;
   border: 1px solid #eeeeee;
   border-top: transparent;
@@ -492,7 +509,7 @@ img {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--text-black-color);
 }
 .portfolio-tool-p {
   width: 322px;
